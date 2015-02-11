@@ -10,11 +10,11 @@ Installation
 
 Typical install on a RPi running Ubuntu will look something like this.
 
-  sudo apt-get install python-setuptools git
-  sudo easy_install -U RPIO yaml
-  git clone https://github.com/iameli/buttonpusher.git
-  cd buttonpusher
-  cp config.example.yml config.yml
+    sudo apt-get install python-setuptools git
+    sudo easy_install -U RPIO yaml
+    git clone https://github.com/iameli/buttonpusher.git
+    cd buttonpusher
+    cp config.example.yml config.yml
 
 Then modify `config.yml` to suit your needs and run the script with `python buttonpusher.py`. You
 can figure out what `servo_on` and `servo_off` numbers to use by running `python tune.py` and typing
