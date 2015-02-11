@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import SimpleHTTPServer
+import BaseHTTPServer
 import SocketServer
 import logging
 import yaml
@@ -23,7 +23,7 @@ number_whitelist = config['number_whitelist']
 servo = PWM.Servo()
 servo.set_servo(servo_gpio, servo_off)
 
-class ServerHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
+class ServerHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
   def do_POST(self):
     logging.warning('-- got POST --')
