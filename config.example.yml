@@ -1,0 +1,32 @@
+# Hi I am an example config file. Modify me to suit your needs and copy me to "config.yml" to
+# proceed.
+
+# What port should we use?
+port: 3030
+
+# What GPIO pin is the servo hooked up to? Proper GPIO number, not the number of the physical pin
+# location.
+servo_gpio: 4 
+
+# What signal should we send to the servo in "resting" position? (When we aren't pressing the
+# button) Use tune.py to help you figure out the right signal.
+servo_off: 2200
+
+# What signal should we send to the servo in "active" position? (When we are pushing the button)
+servo_on: 1900
+
+# How long should we hold down the button, in seconds?
+servo_press_time: 1
+
+# Enough servo crap. What's your Twilio Account_SID? It should look kind of like
+# this: AC1caf3aeab2f5ec77318e376ad89cda9f
+twilio_sid: AC1caf3aeab2f5ec77318e376ad89cda9f
+
+# Finally: you don't want any random shlub to be able to open your door. What phone numbers should
+# we respond to? In E.164 format, so the american 999-888-7777 becomes +19998887777. Add as many
+# as you like!
+number_whitelist:
+  - "+19998887777"
+  - "+11234567890"
+
+# Cool you're done.
