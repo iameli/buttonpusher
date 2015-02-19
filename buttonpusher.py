@@ -9,7 +9,7 @@ import os
 from RPIO import PWM
 from time import sleep
 
-stream = open(os.path.relpath('config.yml', os.path.dirname(__file__)), 'r')
+stream = open(os.path.join(os.path.dirname(__file__), 'config.yml'), 'r')
 config = yaml.load(stream)
 
 port             = int(config['port'])
