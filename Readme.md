@@ -3,7 +3,7 @@ buttonpusher
 
 I'm a little Python script for use on a Raspberry Pi that solves the problem of apartment building doors being locked!
 
-More details in a forthcoming blog post.
+More details on [this blog post](http://words.iame.li/post/112091812552/buttonpusher).
 
 Installation
 ------------
